@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu Enterprises - Loctite</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+        .card {
+            background: white;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 30px;
+            margin: 20px;
+        }
+        .header {
+            /* Loctite Red Branding */
+            background: linear-gradient(135deg, #cc0000, #ff3333);
+            color: white;
+            padding: 40px 20px 60px 20px;
+        }
+        .company-name {
+            font-size: 26px;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.2;
+        }
+        .dealer-tag {
+            font-size: 16px;
+            color: #fff;
+            background-color: rgba(0,0,0,0.2);
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-top: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .profile-section {
+            margin-top: -45px;
+            padding: 0 20px;
+        }
+        .avatar {
+            width: 85px;
+            height: 85px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: #cc0000;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            border: 4px solid white;
+        }
+        .name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+            margin: 10px 0 5px 0;
+        }
+        .title {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .address-text {
+            font-size: 12px;
+            color: #888;
+            padding: 0 30px;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+        .actions {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 0 25px;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            padding: 14px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: transform 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+            cursor: pointer;
+            border: none;
+            width: 100%;
+            box-sizing: border-box;
+            color: white;
+        }
+        .btn:active { transform: scale(0.98); }
+        
+        .btn-call { background-color: #cc0000; }
+        .btn-whatsapp { background-color: #25D366; }
+        .btn-email { background-color: #ea4335; }
+        .btn-save { background-color: #333; }
+        
+        /* Brochure Buttons - Grey Style */
+        .btn-brochure { 
+            background-color: #f1f2f6; 
+            color: #333; 
+            border: 1px solid #ddd;
+            justify-content: flex-start;
+            padding-left: 20px;
+            text-align: left;
+            font-size: 13px;
+        }
+        .btn-brochure:hover { background-color: #e1e2e6; }
+        
+        .section-header {
+            font-size: 13px;
+            font-weight: 700;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 20px 0 10px 0;
+            text-align: center;
+        }
+
+        .icon { margin-right: 12px; font-size: 18px; width: 20px; text-align: center; }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
+        .product-item {
+            background-color: #fff5f5;
+            border: 1px solid #ffcccc;
+            color: #cc0000;
+            border-radius: 6px;
+            padding: 8px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .footer { margin-top: 25px; font-size: 11px; color: #aaa; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="header">
+            <h1 class="company-name">Himanshu Enterprises</h1>
+            <div class="dealer-tag">Authorized Distributor<br>Henkel Loctite</div>
+        </div>
+
+        <div class="profile-section">
+            <div class="avatar">JB</div>
+            <h2 class="name">Jeevan Bhilala</h2>
+            <div class="title">Himanshu Enterprises</div>
+            <div class="address-text">
+                HIG-2, Old Subhash Nagar, Govindpura,<br>Bhopal - 462023
+            </div>
+        </div>
+
+        <div class="actions">
+            <a href="tel:+916264900273" class="btn btn-call">
+                <span class="icon">📞</span> Call Jeevan (+91 62649 00273)
+            </a>
+            <a href="tel:07554701313" class="btn btn-call" style="background-color: #a30000;">
+                <span class="icon">☎️</span> Call Office (0755-4701313)
+            </a>
+
+            <a href="https://wa.me/916264900273?text=I%20need%20some%20info%20on%20Loctite%20Products" class="btn btn-whatsapp">
+                <span class="icon">💬</span> Whatsapp Jeevan
+            </a>
+            
+            <a href="https://wa.me/917554701313?text=I%20need%20some%20info%20on%20Loctite%20Products" class="btn btn-whatsapp">
+                <span class="icon">💬</span> Whatsapp HE Cust Care
+            </a>
+
+            <a href="mailto:himanshu.ent@gmail.com" class="btn btn-email">
+                <span class="icon">✉️</span> Email Company
+            </a>
+            
+            <button onclick="downloadDualVCard()" class="btn btn-save">
+                <span class="icon">💾</span> Save Contact
+            </button>
+
+            <div class="section-header">Download Brochures</div>
+            
+            <a href="https://drive.google.com/uc?export=download&id=182CzwlbyFurnlHabSN4w9zYKKJImJX3H" class="btn btn-brochure">
+                <span class="icon">📥</span> Assembly Solutions
+            </a>
+            <a href="https://drive.google.com/uc?export=download&id=1k4tPJiwwVBDsFa9DtCazA7LbOCL1CTKT" class="btn btn-brochure">
+                <span class="icon">📥</span> Maintenance Solutions
+            </a>
+            <a href="https://drive.google.com/uc?export=download&id=1GBRBEZDjedrFMB8bQM_M4UEsFB5be0Jr" class="btn btn-brochure">
+                <span class="icon">📥</span> Industrial Pumps
+            </a>
+            <a href="https://drive.google.com/uc?export=download&id=1UFwRIZdsCFIML_SlrSwZK1GocRJzvWMn" class="btn btn-brochure">
+                <span class="icon">📥</span> Electric Motors & Generators
+            </a>
+            <a href="https://drive.google.com/uc?export=download&id=1hh8L0din8Vsv9TR8-pFVgoCQQQ1e_D1t" class="btn btn-brochure">
+                <span class="icon">📥</span> Food & Beverage Plants
+            </a>
+        </div>
+
+        <div class="section-header">Top Selling Loctite Products</div>
+        <div class="product-grid">
+            <div class="product-item">Threadlocking (243/290)</div>
+            <div class="product-item">Thread Sealing (577)</div>
+            <div class="product-item">Gasketing (518)</div>
+            <div class="product-item">Retaining (638)</div>
+            <div class="product-item">Instant Adhesives (401)</div>
+            <div class="product-item">Structural Bonding</div>
+        </div>
+
+        <div class="footer">Himanshu Enterprises | Bhopal</div>
+    </div>
+
+    <script>
+        function downloadDualVCard() {
+            // This creates a multi-entry VCF file containing both contacts
+            
+            // Contact 1: Himanshu Enterprises (Company)
+            var contact1 = [
+                'BEGIN:VCARD',
+                'VERSION:3.0',
+                'FN:Himanshu Enterprises',
+                'ORG:Himanshu Enterprises',
+                'TITLE:Authorized Distributor Henkel Loctite',
+                'TEL;TYPE=WORK,VOICE:07554701313',
+                'TEL;TYPE=WORK,VOICE:07554701312',
+                'EMAIL;TYPE=WORK:himanshu.ent@gmail.com',
+                'ADR;TYPE=WORK:;;HIG-2, Old Subhash Nagar;Govindpura, Bhopal;;462023;',
+                'END:VCARD'
+            ].join('\n');
+
+            // Contact 2: Jeevan Bhilala (Employee)
+            var contact2 = [
+                'BEGIN:VCARD',
+                'VERSION:3.0',
+                'N:Bhilala;Jeevan;;;[HE]',
+                'FN:Jeevan Bhilala [HE]',
+                'ORG:Himanshu Enterprises',
+                'TEL;TYPE=CELL,VOICE:+916264900273',
+                'EMAIL;TYPE=WORK:himanshu.ent@gmail.com',
+                'END:VCARD'
+            ].join('\n');
+
+            // Combine both contacts
+            var vCardData = contact1 + '\n' + contact2;
+
+            var blob = new Blob([vCardData], { type: 'text/vcard' });
+            var url = URL.createObjectURL(blob);
+            var newLink = document.createElement('a');
+            newLink.download = "HimanshuEnterprises_Contacts.vcf";
+            newLink.textContent = "Himanshu Contacts";
+            newLink.href = url;
+            newLink.click();
+        }
+    </script>
+</body>
+</html>
